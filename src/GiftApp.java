@@ -66,7 +66,7 @@ public class GiftApp {
         upper = upper.substring(0, 1).toUpperCase() + upper.substring(1).toLowerCase();
         return upper;
     }
-    //below is used to delete the first character in a string
+    //below is used to delete the last character in a string and make sure it's a comma
     public static String removeEnd(String str) {
         if (str.charAt(str.length() - 1) == ',') {
             str = str.substring(0, str.length() - 1);
